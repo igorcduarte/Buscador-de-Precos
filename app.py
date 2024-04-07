@@ -1,3 +1,4 @@
+#SCRIPT PARA BUSCAR MENOR PREÇO
 #import requests
 #from bs4 import BeautifulSoup
 from selenium import webdriver
