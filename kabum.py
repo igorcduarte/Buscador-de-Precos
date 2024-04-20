@@ -1,5 +1,15 @@
 #SCRIPT PARA BUSCAR MENOR PREÇO
 
+
+
+
+#PROBLEMAS NAS TAGS DE PREÇO E LINK
+
+
+
+
+
+
 from bs4 import BeautifulSoup
 import requests
 
@@ -19,7 +29,7 @@ titulo = produto.find('span', attrs={'class': 'sc-d79c9c3f-0 nlmfp sc-8932d6e-16
 
 #preco = produto.find('span', class_='sc-b1f5eb03-2 iaiQNF priceCard').get_text()
 
-print(produto.prettify)
+print(produto.prettify())
 print('Titulo do produto: ', titulo.text)
 #print('Preço do produto: ', preco)
 #print('Link do produto: ', link)
