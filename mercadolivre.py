@@ -25,3 +25,28 @@ for produto in produtos:
     print('Link do produto: R$', link['href'])
 
     print('\n\n')
+
+    save = input('Deseja salvar os dados em um arquivo? (s/n) ')
+
+    if save == 's':
+        with open('produtos.txt', 'a') as arq:
+
+            arq.write(titulo.text)
+            arq.write('\n')
+
+            arq.write(preco.text)
+
+            arq.write('\n')
+
+            arq.write(link['href'])
+
+            arq.write('\n\n')
+
+        print('Dados salvos com sucesso!')
+
+    elif save == 'n':
+        print('Ok, até a próxima!')
+
+    else:
+
+        print('Opção inválida!')
