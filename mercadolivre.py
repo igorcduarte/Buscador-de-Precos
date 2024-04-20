@@ -17,11 +17,11 @@ for produto in produtos:
 
     link = produto.find('a', attrs={'class': 'ui-search-link'})
 
-    real = produto.find('span', attrs={'class': 'andes-money-amount__fraction'})
+    preco = produto.find('span', attrs={'class': 'andes-money-amount__fraction'})
 
     #print(produto.prettify())
     print('Titulo do produto: ', titulo.text)
-    print('Preço do produto: ', real.text)
+    print('Preço do produto: ', preco.text)
     print('Link do produto: R$', link['href'])
 
     print('\n\n')
