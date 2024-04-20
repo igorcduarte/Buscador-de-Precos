@@ -26,6 +26,7 @@ for produto in produtos:
 
     print('\n\n')
 
+    # Salvando os dados em um arquivo
     save = input('Deseja salvar os dados em um arquivo? (s/n) ')
 
     if save == 's':
